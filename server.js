@@ -23,7 +23,7 @@ app.use(morgan("dev"));
 app.use(bodyParser.json({ limit: "2mb" }));
 app.use(function (req, res, next) {
   //Enabling CORS
-  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Origin", "https://ranjuclient.aliitltd.org");
   res.header("Access-Control-Allow-Credentials", "true");
   res.header("preflightContinue" , "false");
   res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
