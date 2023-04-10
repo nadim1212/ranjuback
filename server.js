@@ -23,7 +23,11 @@ app.use(morgan("dev"));
 app.use(bodyParser.json({ limit: "2mb" }));
 app.use(function (req, res, next) {
   //Enabling CORS
+<<<<<<< HEAD
   res.header("Access-Control-Allow-Origin", "");
+=======
+  res.header("Access-Control-Allow-Origin", "*");
+>>>>>>> 37f5dede7030f089e76c5c89a6497680be33965e
   res.header("Access-Control-Allow-Credentials", "true");
   res.header("preflightContinue" , "false");
   res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
